@@ -1,0 +1,21 @@
+protobuf// proto/user.proto
+syntax = "proto3";
+
+package proto;
+option go_package = "mango/proto";
+
+service UserService {
+  rpc GetUser(GetUserRequest) returns (GetUserResponse);
+}
+
+message GetUserRequest {
+  uint64 id = 1;
+}
+
+message GetUserResponse {
+  uint64 id = 1;
+  string username = 2;
+  string email = 3;
+  string created_at = 4;
+  string updated_at = 5;
+}

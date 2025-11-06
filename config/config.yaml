@@ -1,0 +1,19 @@
+server:
+  host: "0.0.0.0"
+  port: 8080
+
+database:
+  driver: "mysql"
+  host: "rm-2ze53011pfvjkwuf95o.mysql.rds.aliyuncs.com"
+  port: 3306
+  username: "isheji_ppt"
+  password: "xe9GWiLDYm@E28R"
+  dbname: "isheji_ppt"
+
+jwt:
+  secret: "your-secret-key"
+  ttl: 24  # hours
+
+log:
+  level: "info"
+  path: "logs/app.log"

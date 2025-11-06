@@ -635,5 +635,4 @@ func (v *AlgorithmHandler) courseTopology(c *gin.Context) {
 		"coursesNum": coursesNum,
 		"visited":    len(visited),
 	})
-
 }
